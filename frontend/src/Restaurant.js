@@ -3,10 +3,12 @@ import Counter from './Counter'
 
 class App extends Component {
   // YOUR CODE GOES BELOW
-  
   render() {
     return (
-      <div/> 
+      <div>
+        <h4>{this.props.name}</h4>
+        <Counter count = {this.props.rating}/>
+      </div> 
     )
   }
 }
